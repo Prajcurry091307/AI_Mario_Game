@@ -45,6 +45,12 @@ var gameConfig={
   scores: 0
 }
 
+//Added by PRAJWAL
+
+noseX="";
+noseY=""
+GameStatus="";
+
 
 /*=====  End of Variables  ======*/
 
@@ -53,7 +59,13 @@ var gameConfig={
 =            Game Status             =
 ====================================*/
 
+function startGame()
+{
+  GameStatus="start";
+  document.getElementById('status').innerHTML = "Game is Loading";
+}
 function game(){
+  console.log("noseX = "+ noseX +"nose Y=" +noseY);
 
   instializeInDraw();
   moveEnvironment(mario);
