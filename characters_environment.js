@@ -309,7 +309,7 @@ function manualControl(character){
     }
   }
  
-}
+
 
 /* Movements of character */
 function jumping(character){
