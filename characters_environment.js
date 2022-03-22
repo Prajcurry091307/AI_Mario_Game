@@ -293,6 +293,7 @@ function manualControl(character){
   
   if(character.live){
     if(noseX <300)
+    {
       character.velocity.x-=gameConfig.moveSpeed;
       character.changeAnimation('move');
       character.mirrorX(-1);
@@ -623,6 +624,4 @@ function rightSide(obj){ return obj.position.x+(obj.width/2);}
 function upSide(obj){ return obj.position.y-(obj.height/2);}
 function downSide(obj){ return obj.position.y+(obj.height/2);}
 
-/*=====  End of For Debugging  ======*/
-
-
+/*=====  End of For Debugging  ======*/}
